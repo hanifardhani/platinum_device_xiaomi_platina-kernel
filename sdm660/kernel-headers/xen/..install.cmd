@@ -1,0 +1,1 @@
+cmd_platinum/include/xen/.install := /bin/bash ../scripts/headers_install.sh platinum/include/xen ../include/uapi/xen evtchn.h gntalloc.h gntdev.h privcmd.h; /bin/bash ../scripts/headers_install.sh platinum/include/xen ./include/generated/uapi/xen ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > platinum/include/xen/$$F; done; touch platinum/include/xen/.install
