@@ -1,0 +1,1 @@
+cmd_platinum/include/misc/.install := /bin/bash ../scripts/headers_install.sh platinum/include/misc ../include/uapi/misc cxl.h; /bin/bash ../scripts/headers_install.sh platinum/include/misc ./include/generated/uapi/misc ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > platinum/include/misc/$$F; done; touch platinum/include/misc/.install
